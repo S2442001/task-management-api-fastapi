@@ -73,22 +73,20 @@ python -m venv .venv
 .venv\Scripts\activate
 # macOS/Linux
 source .venv/bin/activate
-
+---
 * Install dependencies: pip install -r requirements.txt
 * Apply Alembic migrations: alembic upgrade head
 * Start FastAPI server: uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 * Access the API: http://localhost:8000
 * Swagger UI for testing endpoints: http://localhost:8000/docs
-
 ---
-
 ### Notes
 
 * JWT access tokens expire after 30 minutes. Re-login if token expires.
 * First registered user becomes admin, others become user.
 * Use Swagger UI to interact with endpoints; no separate frontend is required.
 * Docker ensures a fully isolated environment for app and PostgreSQL database.
-
+---
 ### API Screenshots
 <img width="1828" height="971" alt="image" src="https://github.com/user-attachments/assets/98f1d429-c341-42e2-b200-89f2f66d2d02" />
 
