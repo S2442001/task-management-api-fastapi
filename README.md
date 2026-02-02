@@ -1,4 +1,4 @@
-# FastAPI Task & Notes Manager
+# FastAPI Task Manager
 
 A simple **CRUD Task Management API** built with **FastAPI**, **PostgreSQL**, and **SQLAlchemy (async)**. The project supports user authentication with **JWT tokens**, password hashing with **Argon2**, and is fully containerized using **Docker** and **Docker Compose**.
 
@@ -43,8 +43,6 @@ A simple **CRUD Task Management API** built with **FastAPI**, **PostgreSQL**, an
 ### Environment Variables
 
 Create a `.env` file with the following variables:
-
-```env
 DB_USER=postgres
 DB_PASSWORD=yourpassword
 DB_HOST=127.0.0.1
@@ -90,4 +88,8 @@ source .venv/bin/activate
 * First registered user becomes admin, others become user.
 * Use Swagger UI to interact with endpoints; no separate frontend is required.
 * Docker ensures a fully isolated environment for app and PostgreSQL database.
+
+### API Screenshots
+<img width="1828" height="971" alt="image" src="https://github.com/user-attachments/assets/98f1d429-c341-42e2-b200-89f2f66d2d02" />
+
 
